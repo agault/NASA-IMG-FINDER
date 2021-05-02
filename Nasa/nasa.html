@@ -1,0 +1,76 @@
+<!-- 0rN6KLGCEGYRZ3FELKNuiwhnQQ4tsWlMMP9nUWG5 API KEY--><!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>NASA</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="nasa.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+      
+    </head>
+    <body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">NASA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Martians</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photography</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+   <!-- COLUMNS 1: Photo of The Day + Text, COlumn 2: Date for both Photo of the day and Mars -->
+   
+   <h1 id="h1">NASA-Today and the Past</h1>
+
+   <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 24rem;">
+          <span id="image"></span>
+          <h3>NASA's Photo for Today </h3>         
+          <button id="search">Today's Picture</button>
+          <div class="card-body">
+            <h5 class="card-title" id="title"></h5>
+            <p class="card-text" id="description"></p>
+          </div>
+        </div>
+      </div>
+      <!-- ALL THE Pics from given day -->
+      <div class="col">
+        
+        <div class="card" style="width: 24rem;">
+          <h3>NASA's Historical Photo</h3>  
+          <h5>Including Mars Rover</h5>       
+          <form action="#" method="post" id="checkDate" name="checkDate">
+            <div class="col-6">
+                <label for = "searchDate" class="searchDate">Get Image by Date: </label>
+                <input id="searchDate" type="text" Placeholder="yyyy-mm-dd"></input>
+                <button type="button" id="getDateValue">Get Image</button>
+            </div>
+          </form>
+          <span id="imageDate"></span>
+        </div>
+          <!-- Form to Check Date -->
+      </div>
+    </div>
+  </div>
+  <script async defer type="text/javascript"  src="nasa.js" charset="utf-8"></script>
+
+        </body>
+    </html>
+    

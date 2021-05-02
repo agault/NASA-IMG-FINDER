@@ -1,0 +1,50 @@
+body{
+    background-image: url('nasa.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#h1{
+    color:#ffffff;
+    margin: 20px;
+}
+h3{
+    color:white;
+    margin: 20px;
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+.card{
+  opacity: 90%;
+    width: 30%;
+    Height: 100%
+}
+.marsIMG{
+    opacity: 100%;
+    width:24em;
+    margin: 0 auto;
+}
+#image{
+    opacity: 100%;
+    width:24em;
+    margin: 0 auto;  
+}
+#imageDate{
+    opacity: 100%;
+    width:24em;
+    margin: 0 auto;
+}
+#search{
+    background-color: rgb(100, 102, 247);
+    opacity: 100%;
+    border-radius:5px;
+    margin :10px;
+    border: none;
+    padding:5px;
+}
+#description{
+ height: 100%;
+ margin-bottom:0px;
+}
